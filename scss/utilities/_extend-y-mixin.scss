@@ -1,0 +1,17 @@
+//EXTEND
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+//MIXIN
+@mixin fondo-color($fondo, $color-texto, $ancho){
+background-color: $fondo;
+color: $color-texto;
+width: $ancho;
+text-align: center;
+font-weight: bold;
+}

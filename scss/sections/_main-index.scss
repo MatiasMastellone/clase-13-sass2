@@ -1,0 +1,29 @@
+.main-index{
+
+    //EXTEND
+    .primera{
+        @extend .flex-column;
+    }
+
+    .segunda{
+        @extend .flex-column;
+    }
+
+
+    //OPERACIONES
+    .tercera{
+        display: flex;
+        .div-1{
+            height: 150px;
+            @include fondo-color($verde-fuerte,$rojizo,100px);
+        }
+        .div-2{
+            height: (150px)/2;
+            @include fondo-color($amarillo,$verde-lima,150px);
+        }
+        .div-3{
+            height: (150px)*2;
+            @include fondo-color($rojizo,$amarillo,125px);
+        }
+    }
+}
